@@ -1,0 +1,21 @@
+{
+    "name": "eldar8/examples",
+    "description": "Code examples for saritaza.kz",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
+    },
+    "scripts": {
+        "post-install-cmd": [
+	    "bin/flush-priveleges.sh"
+	],
+	"post-update-cmd": [
+	    "bin/flush-priveleges.sh"
+	]
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
